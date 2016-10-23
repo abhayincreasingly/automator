@@ -1,8 +1,8 @@
 # config valid only for current version of Capistrano
 lock '3.6.1'
 
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'painless-deployment-workflows-with-capistrano-3'
+set :repo_url, 'git@github.com:Assortment/painless-deployment-workflows-with-Capistrano-3.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -11,7 +11,7 @@ set :repo_url, 'git@example.com:me/my_repo.git'
 # set :deploy_to, '/var/www/my_app_name'
 
 # Default value for :scm is :git
-# set :scm, :git
+set :scm, :git
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -33,4 +33,4 @@ set :repo_url, 'git@example.com:me/my_repo.git'
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 # Default value for keep_releases is 5
-# set :keep_releases, 5
+set :keep_releases, 3

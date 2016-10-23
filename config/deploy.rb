@@ -8,7 +8,7 @@ set :repo_url, 'git@github.com:Assortment/painless-deployment-workflows-with-Cap
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, '/var/www/my_app_name'
+set :deploy_to, '/var/www/html/painless-deployment-workflows-with-capistrano-3'
 
 # Default value for :scm is :git
 set :scm, :git

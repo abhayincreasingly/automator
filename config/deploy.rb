@@ -14,8 +14,8 @@ lock '3.6.1'
 #### Project info
 ##############################
 
-set :application, 'painless-deployment-workflows-with-capistrano-3'
-set :repo_url, 'git@github.com:Assortment/painless-deployment-workflows-with-Capistrano-3.git'
+set :application, 'automator'
+set :repo_url, 'git@github.com:abhayincreasingly/automator.git'
 
 
 ##############################

@@ -3,8 +3,13 @@
 ######################################################################
 
 set :branch, "master"
-server "SERVER-IP-HERE", user: "SSH-USER", roles: %w{web app db}
-set :deploy_to, '/var/www/html/painless-deployment-workflows-with-capistrano-3'
+server "ec2-34-252-7-242.eu-west-1.compute.amazonaws.com", user: "ubuntu", roles: %w{web app db}
+set :deploy_to, '/var/www/html/Clients/automator'
+ssh_options: {
+    user: 'ubuntu', # overrides user setting above
+    keys: %w(/home/inc/.ssh/aws_increasingly.pem),
+    auth_methods: %w(publickey)
+}
 
 
 ##############################
